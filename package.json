@@ -1,0 +1,43 @@
+{
+    "name": "my-pomodoro-timer",
+    "displayName": "Chempic Timer(Pomodoro)",
+    "publisher": "Chempic-Dev",
+    "icon": "icon.png",
+    "description": "Simple Pomodoro timer for VS Code",
+    "version": "1.0.2",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "pomodoro-timer.start",
+                "title": "Toggle Pomodoro Timer",
+                "category": "Pomodoro"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.60.0",
+        "@types/node": "16.x",
+        "@typescript-eslint/eslint-plugin": "^5.59.1",
+        "@typescript-eslint/parser": "^5.59.1",
+        "eslint": "^8.39.0",
+        "typescript": "^4.9.4"
+    }
+
+}
