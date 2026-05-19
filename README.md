@@ -25,8 +25,4 @@ No way, everything is ready out of the box😌.
 
 # Author
 
-- ## IRL Name
--     Yazykov Andrey
-
-- ### Group
--     M3109
+Chempic-Dev
